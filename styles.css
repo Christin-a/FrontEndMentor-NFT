@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+:root {
+--primary-color: hsl(178, 100%, 50%);
+--secondary-color: hsl(215, 51%, 70%);
+}
+
+h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 15px 0;
+}
+h1:hover {
+    color: var(--primary-color);
+}
+h2 {
+   color: var(--primary-color);
+    font-weight: 600;
+    font-size: 12px;
+
+}
+h3 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+p {
+    color: var(--secondary-color);
+    font-weight: 200;
+    font-size: 14px;
+}
+h4 {
+    color: var(--secondary-color);
+    font-weight: 200;
+    font-size: 12px;
+}
+
+hr {
+    width: auto;
+    height: 1px;
+    background-color:hsla(215, 52%, 70%, 0.226);
+    border: none;
+    margin: 10px 0;
+}
+
+/* -----------------Card----------------------------- */
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    height: 480px;
+    width: 255px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 15px 15px hsl(217, 54%, 10%);
+    padding: 15px;
+    margin: 0 auto;
+    position: relative;
+  transform: translateY(50%);
+
+}
+
+
+/* -----------------Card-Image----------------------------- */
+.hover:hover {
+    cursor: pointer;
+    transition: .5s ease;
+    }
+
+.item {
+    position: relative;
+   
+}
+
+.itemImg {
+    width: 225px;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+}  
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.iconImg {
+  margin: auto;
+}
+
+.overlay:hover{
+    opacity: .6;
+    
+}
+
+
+img {
+    margin-right: 5px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    height: auto;
+}
+
+
+.details span {
+    vertical-align: middle;
+
+}
+
+.creator {
+    margin: 10px 0;
+}
+
+.creator span {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.creator img {
+    width: 25px;
+    border-radius: 100px;
+    border: solid .5px white;
+    vertical-align: middle;
+
+}
+
+.creatorName:hover {
+  color: var(--primary-color);
+}
+
+.attribution {
+    height: auto;
+    margin: 20px 0;
+}
